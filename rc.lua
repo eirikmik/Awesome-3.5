@@ -49,7 +49,7 @@ end
 -- }}}
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt -fg green -bg black"
+terminal = "termite" --"urxvt -fg green -bg black"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -159,7 +159,7 @@ spacer:set_text(' | ')
 
 --Weather Widget
 weather = wibox.widget.textbox()
-vicious.register(weather, vicious.widgets.weather, "Weather: ${city}. Sky: ${sky}. Temp: ${tempc}c Humid: ${humid}%. Wind: ${windkmh} KM/h", 1200, "YMML")
+vicious.register(weather, vicious.widgets.weather, "Weather: ${city}. Sky: ${sky}. Temp: ${tempc}c Humid: ${humid}%. Wind: ${windkmh} KM/h", 1200, "ENGM")
 
 --Battery Widget
 batt = wibox.widget.textbox()
